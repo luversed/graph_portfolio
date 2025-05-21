@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luisa Frescura | Generative AI Portfolio</title>
+  <title>Luisa Frescura | Generative AI Portfolio</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
     :root { --clr-bg:#fff; --clr-text:#111; --clr-muted:#666; --clr-accent:#ff5c35; --fs-base:18px; --section-gap:8rem; --max-w:1000px; }
@@ -31,6 +31,9 @@
     .submissions ol{margin-left:1.2rem;counter-reset:weeks}
     .submissions li{margin-bottom:1rem;line-height:1.4;list-style:none}
     .submissions li::before{counter-increment:weeks;content:"Week " counter(weeks) " – ";font-weight:600}
+    .projects{margin-top:2rem;margin-left:0;list-style:none;padding-left:0}
+    .projects li{margin-bottom:1.25rem}
+    .projects a{color:var(--clr-accent);text-decoration:underline}
     footer{padding:4rem 1rem;text-align:center;font-size:.85rem;color:var(--clr-muted)}
     @media(max-width:700px){.site-nav{display:none}}
   </style>
@@ -41,50 +44,55 @@
     <nav class="site-nav"><a href="#about">About</a><a href="#course">Course</a><a href="#submissions">Syllabus</a></nav>
   </header>
   <section class="hero" id="home">
-    <h1>Generative AI for<br><span>Work & Research</span></h1>
+    <h1>Generative AI for<br><span>Work & Research</span></h1>
     <p class="subtitle">Automating insight, accelerating impact.</p>
     <a href="#submissions" class="cta">View Syllabus</a>
   </section>
   <section id="about" class="about">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <p>I'm a public‑health data professional with 15+ years of experience working on epidemiological research and data‑for‑impact initiatives in the global health space. My work focuses on turning complex health data into actionable insights that improve lives worldwide.</p>
-      <p>Curiosity, empathy, and collaboration guide my approach. I'm currently exploring Generative AI to automate analysis, streamline reporting, and amplify knowledge sharing in global health.</p>
+      <h2 class="section-title">About Me</h2>
+      <p>I'm a public-health data professional with 15+ years of experience working on epidemiological research and data-for-impact initiatives in the global health space. My work focuses on turning complex health data into actionable insights that improve lives worldwide.</p>
+      <p>Curiosity, empathy, and collaboration guide my approach. I'm currently exploring Generative AI to automate analysis, streamline reporting, and amplify knowledge sharing in global health.</p>
     </div>
   </section>
   <section id="course" class="course">
     <div class="container">
-      <h2 class="section-title">About the Course</h2>
-      <p><strong>Generative AI for Work & Research Productivity</strong> is an 8‑week live online certification offered by the GRAPH Network. The programme teaches no‑code AI tools for automating content creation, data analysis, knowledge management, and routine workflows.</p>
+      <h2 class="section-title">About the Course</h2>
+      <p><strong>Generative AI for Work & Research Productivity</strong> is an 8-week live online certification offered by the GRAPH Network. The programme teaches no-code AI tools for automating content creation, data analysis, knowledge management, and routine workflows.</p>
       <p>Key modules include:</p>
       <ul>
-        <li>Documents, Presentations & Websites</li>
+        <li>Documents, Presentations & Websites</li>
         <li>Automated Data Analysis</li>
-        <li>GenAI for Research & Text Analysis</li>
+        <li>GenAI for Research & Text Analysis</li>
         <li>Custom GPTs and Chatbots</li>
         <li>AI Workflows for Task Automation</li>
-        <li>GenAI for Communication & Outreach</li>
-        <li>Capstone Project & Showcase</li>
+        <li>GenAI for Communication & Outreach</li>
+        <li>Capstone Project & Showcase</li>
       </ul>
     </div>
   </section>
   <section id="submissions" class="submissions">
     <div class="container">
-      <h2 class="section-title">Course Syllabus – Cohort 2025 Q2</h2>
-      
+      <h2 class="section-title">Course Syllabus – Cohort 2025 Q2</h2>
       <ol>
-        <li>Websites, Documents & Presentations — <em>May 9 / May 11</em></li>
-        <li>Automated Data Analysis — <em>May 16 / May 18</em></li>
-        <li>GenAI for Research & Text Analysis — <em>May 23 / May 25</em></li>
-        <li>Custom GPTs and Chatbots — <em>May 30 / Jun 1</em></li>
-        <li>AI for Task Automation — <em>Jun 6 / Jun 8</em></li>
-        <li>GenAI for Communication & Outreach — <em>Jun 13 / Jun 15</em></li>
-        <li>Capstone Project Initial Presentations — <em>Jun 20 / Jun 22</em></li>
-        <li>Showcase Day — <em>Jun 27 / Jun 29</em></li>
+        <li>Websites, Documents & Presentations — <em>May 9 / May 11</em></li>
+        <li>Automated Data Analysis — <em>May 16 / May 18</em></li>
+        <li>GenAI for Research & Text Analysis — <em>May 23 / May 25</em></li>
+        <li>Custom GPTs and Chatbots — <em>May 30 / Jun 1</em></li>
+        <li>AI for Task Automation — <em>Jun 6 / Jun 8</em></li>
+        <li>GenAI for Communication & Outreach — <em>Jun 13 / Jun 15</em></li>
+        <li>Capstone Project Initial Presentations — <em>Jun 20 / Jun 22</em></li>
+        <li>Showcase Day — <em>Jun 27 / Jun 29</em></li>
       </ol>
+
+      <!-- Projects Section -->
+      <h3 class="section-title" style="font-size:1.5rem;margin-top:4rem">Projects</h3>
+      <ul class="projects">
+        <li><strong>Workshop&nbsp;2: Automated Data Analysis</strong> — Analyzed Gapminder data to explore relationships between two global indicators using AI tools. <a href="https://github.com/luversed/graph_portfolio.git" target="_blank" rel="noopener">View report</a></li>
+      </ul>
     </div>
   </section>
-  <footer>&copy; <span id="yr"></span> Luisa Frescura. All rights reserved.</footer>
+  <footer>&copy; <span id="yr"></span> Luisa Frescura. All rights reserved.</footer>
   <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
