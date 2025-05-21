@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luisa Frescura | Generative AI Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+    :root { --clr-bg:#fff; --clr-text:#111; --clr-muted:#666; --clr-accent:#ff5c35; --fs-base:18px; --section-gap:8rem; --max-w:1000px; }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:var(--fs-base)}
+    body{font-family:'Inter',sans-serif;background:var(--clr-bg);color:var(--clr-text);line-height:1.65;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .site-header{position:fixed;top:0;left:0;right:0;padding:1.5rem 2rem;display:flex;justify-content:space-between;align-items:center;mix-blend-mode:difference;z-index:100}
+    .logo{font-weight:800;font-size:1.25rem;letter-spacing:-.5px}
+    .site-nav a{margin-left:2rem;font-size:.95rem;font-weight:600;position:relative}
+    .site-nav a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--clr-accent);transition:width .3s}
+    .site-nav a:hover::after{width:100%}
+    .hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 1rem}
+    .hero h1{font-size:clamp(2.5rem,8vw,5.5rem);font-weight:800;letter-spacing:-1px;line-height:1.1}
+    .hero h1 span{font-weight:300;font-style:italic}
+    .subtitle{margin-top:1.5rem;font-size:1.05rem;color:var(--clr-muted);max-width:500px}
+    .cta{display:inline-block;margin-top:2.5rem;padding:.9rem 2.2rem;border:2px solid var(--clr-text);border-radius:50px;font-weight:600;transition:background .25s,color .25s}
+    .cta:hover{background:var(--clr-text);color:#fff}
+    section{padding:var(--section-gap) 1rem}
+    section:nth-of-type(even){background:#f7f7f7}
+    .container{max-width:var(--max-w);margin:0 auto}
+    h2.section-title{font-size:2rem;font-weight:800;margin-bottom:2.5rem}
+    .about p,.course p{margin-bottom:1.25rem}
+    .course ul{margin-left:1.2rem;list-style:disc}
+    .submissions ol{margin-left:1.2rem;counter-reset:weeks}
+    .submissions li{margin-bottom:1rem;line-height:1.4;list-style:none}
+    .submissions li::before{counter-increment:weeks;content:"Week " counter(weeks) " – ";font-weight:600}
+    footer{padding:4rem 1rem;text-align:center;font-size:.85rem;color:var(--clr-muted)}
+    @media(max-width:700px){.site-nav{display:none}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">lu.</div>
+    <nav class="site-nav"><a href="#about">About</a><a href="#course">Course</a><a href="#submissions">Syllabus</a></nav>
+  </header>
+  <section class="hero" id="home">
+    <h1>Generative AI for<br><span>Work & Research</span></h1>
+    <p class="subtitle">Automating insight, accelerating impact.</p>
+    <a href="#submissions" class="cta">View Syllabus</a>
+  </section>
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p>I'm a public‑health data professional with 15+ years of experience working on epidemiological research and data‑for‑impact initiatives in the global health space. My work focuses on turning complex health data into actionable insights that improve lives worldwide.</p>
+      <p>Curiosity, empathy, and collaboration guide my approach. I'm currently exploring Generative AI to automate analysis, streamline reporting, and amplify knowledge sharing in global health.</p>
+    </div>
+  </section>
+  <section id="course" class="course">
+    <div class="container">
+      <h2 class="section-title">About the Course</h2>
+      <p><strong>Generative AI for Work & Research Productivity</strong> is an 8‑week live online certification offered by the GRAPH Network. The programme teaches no‑code AI tools for automating content creation, data analysis, knowledge management, and routine workflows.</p>
+      <p>Key modules include:</p>
+      <ul>
+        <li>Documents, Presentations & Websites</li>
+        <li>Automated Data Analysis</li>
+        <li>GenAI for Research & Text Analysis</li>
+        <li>Custom GPTs and Chatbots</li>
+        <li>AI Workflows for Task Automation</li>
+        <li>GenAI for Communication & Outreach</li>
+        <li>Capstone Project & Showcase</li>
+      </ul>
+    </div>
+  </section>
+  <section id="submissions" class="submissions">
+    <div class="container">
+      <h2 class="section-title">Course Syllabus – Cohort 2025 Q2</h2>
+      
+      <ol>
+        <li>Websites, Documents & Presentations — <em>May 9 / May 11</em></li>
+        <li>Automated Data Analysis — <em>May 16 / May 18</em></li>
+        <li>GenAI for Research & Text Analysis — <em>May 23 / May 25</em></li>
+        <li>Custom GPTs and Chatbots — <em>May 30 / Jun 1</em></li>
+        <li>AI for Task Automation — <em>Jun 6 / Jun 8</em></li>
+        <li>GenAI for Communication & Outreach — <em>Jun 13 / Jun 15</em></li>
+        <li>Capstone Project Initial Presentations — <em>Jun 20 / Jun 22</em></li>
+        <li>Showcase Day — <em>Jun 27 / Jun 29</em></li>
+      </ol>
+    </div>
+  </section>
+  <footer>&copy; <span id="yr"></span> Luisa Frescura. All rights reserved.</footer>
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
