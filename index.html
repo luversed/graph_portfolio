@@ -31,14 +31,15 @@
     .submissions ol{margin-left:1.2rem;counter-reset:weeks}
     .submissions li{margin-bottom:1rem;line-height:1.4;list-style:none}
     .submissions li::before{counter-increment:weeks;content:"Week " counter(weeks) " – ";font-weight:600}
+    .contact iframe{width:100%;max-width:100%;border:none;height:944px}
     footer{padding:4rem 1rem;text-align:center;font-size:.85rem;color:var(--clr-muted)}
-    @media(max-width:700px){.site-nav{display:none}}
+    @media(max-width:700px){.site-nav{display:none}.contact iframe{height:800px}}
   </style>
 </head>
 <body>
   <header class="site-header">
     <div class="logo">lu.</div>
-    <nav class="site-nav"><a href="#about">About</a><a href="#course">Course</a><a href="#submissions">Syllabus</a></nav>
+    <nav class="site-nav"><a href="#about">About</a><a href="#course">Course</a><a href="#submissions">Syllabus</a><a href="#contact">Contact</a></nav>
   </header>
   <section class="hero" id="home">
     <h1>Generative AI for<br><span>Work & Research</span></h1>
@@ -83,9 +84,17 @@
       </ol>
     </div>
   </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact for Consultation</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelclIDOVIZ7jPRxiR3VwLjvcnR-ou-cM-tILuMs29mYNwRTw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </section>
+
   <footer>&copy; <span id="yr"></span> Luisa Frescura. All rights reserved.</footer>
   <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
-<script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2025/06/05/09/20250605092441-2LQRNXR2.js"></script>
 </body>
 </html>
+
